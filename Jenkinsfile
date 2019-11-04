@@ -9,7 +9,7 @@ options{
 skipStagesAfterUnstable(){
 }
 stages{
-stage('Build'){
+stage('Build')
 steps{
 sh 'javac HelloWorld.java && java HelloWorld'
 
