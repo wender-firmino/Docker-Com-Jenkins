@@ -6,10 +6,10 @@ args '-v /root/.m2:/root/.m2'
 }
 }
 options{
-skipStagesAfterUnstable(){
+skipStagesAfterUnstable()
 }
 stages{
-stage('Build')
+stage('Build'){
 steps{
 sh 'javac HelloWorld.java && java HelloWorld'
 
