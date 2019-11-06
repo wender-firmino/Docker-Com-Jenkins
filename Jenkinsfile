@@ -12,6 +12,7 @@ pipeline{
     stage('Build'){
       steps{
         sh 'javac HelloWorld.java && java HelloWorld'
+        }
       }
       stage('Results') {
             steps {
@@ -23,7 +24,7 @@ pipeline{
                     }
                 }
             }
-        }
+        
     }
   }
 }
